@@ -18,9 +18,33 @@
 
 # Prerequisites
 
-# Installation & Configuration
+# Installation & Configuration & Database
 
-# Database Setup
+- rename `.env_example` to `.env` and input some config
+
+### Local Setup
+
+- install Ruby 3.1.1 & rails 7.0.4
+- install posgresql
+- install redis
+- run `bundle install` then run `rails s`
+
+### Docker
+
+- install docker
+- run
+
+```
+  docker compose build
+  docker-compose run web rake db:reset
+  docker-compose run web rake db:create
+  docker-compose run web rake db:migrate
+  docker-compose up -d
+```
+
+rails db:create
+
+
 
 # Running the Application
 
@@ -29,7 +53,6 @@
 # Usage
 
 # Troubleshooting
-
 
 # Steps 
 

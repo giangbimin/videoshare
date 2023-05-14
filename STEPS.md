@@ -9,7 +9,7 @@
   ./bin/dev
 ```
 
-## deployment
+## deployment With fly.io
 
 ```
   fly launch
